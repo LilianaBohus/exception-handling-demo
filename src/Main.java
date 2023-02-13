@@ -4,12 +4,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        readFromFile("nem_letezo_fajl.txt");
-
-        /*
-        Itt még hibás a kód, megint le kell kezelnünk a kivételeket.
-        (Soha ne pusholjunk nem forduló kódot!)
-         */
+        try {
+            readFromFile("nem_letezo_fajl.txt");
+        } catch (FileNotFoundException e) {
+            System.out.println("Hiba a fájl beolvasása során");;
+        }
     }
 
     private static void readFromFile(String path) throws FileNotFoundException {
