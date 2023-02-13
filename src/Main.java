@@ -9,7 +9,10 @@ public class Main {
         System.out.println("Add meg az osztót!");
         int oszto = Integer.parseInt(scanner.nextLine());
 
-        double hanyados = (double) osztando / oszto;
-        System.out.println("A két szám hányadosa: " + hanyados);
+        // Próbáljunk nullával osztani!
+        double tortHanyados = (double) osztando / oszto;
+        System.out.println("A két szám tört hányadosa: " + tortHanyados);
+        int egeszHanyados = osztando / oszto;
+        System.out.println("A két szám egész hányadosa: " + egeszHanyados);
     }
 }
