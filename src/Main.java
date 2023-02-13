@@ -3,12 +3,8 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        try {
-            readFromFile("nem_letezo_fajl.txt");
-        } catch (FileNotFoundException e) {
-            System.out.println("Hiba a fájl beolvasása során");;
-        }
+    public static void main(String[] args) throws FileNotFoundException {
+        readFromFile("nem_letezo_fajl.txt");
     }
 
     private static void readFromFile(String path) throws FileNotFoundException {
